@@ -1,0 +1,13 @@
+html
+    head 
+        link(rel=stylesheet href="")
+        title= pageTitle
+    body 
+        .container 
+            h1#admin-title= dashboardHeading
+            #admin-nav
+                h3#user-name= "Welcome Rohit" 
+                a(href="/admin/logout" id="logoutBtn")= dashboardButton
+
+                #posts
+                    include posts.pug
